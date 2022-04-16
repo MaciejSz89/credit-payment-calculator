@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c23a179b-97bd-4be0-9f61-f6c044523e52": {
+      "ProjectGuid": "c23a179b-97bd-4be0-9f61-f6c044523e52",
+      "DisplayName": "CreditPaymentCalculator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

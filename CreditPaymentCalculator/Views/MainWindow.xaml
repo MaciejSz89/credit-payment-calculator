@@ -1,0 +1,67 @@
+﻿<mah:MetroWindow x:Class="CreditPaymentCalculator.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreditPaymentCalculator"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Kalkulator spłaty kredytu" Height="450" Width="800" MinWidth="800">
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Border">
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="BorderBrush" Value="Gray"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border>
+            <DataGrid>
+
+            </DataGrid>
+        </Border>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Grid.Row="0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="210" Text="Kwota kredytu pozostała do spłaty:" />
+                    <TextBox Width="150" Height="20"/>
+                    <TextBlock Text="zł"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="1">
+                <StackPanel  Orientation="Horizontal" >
+                    <TextBlock Width="210" Text="Liczba miesięcy pozostałych do spłaty:" />
+                    <TextBox Width="150" Height="20"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="0">
+                <StackPanel  Orientation="Horizontal" >
+                    <TextBlock Width="210" Text="Oprocentowanie:" />
+                    <TextBox Width="150" Height="20"/>
+                    <TextBlock Text="%"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="1">
+                <StackPanel  Orientation="Horizontal" >
+                    <TextBlock Width="210" Text="Rodzaj rat:" />
+                    <ComboBox Width="150" Height="20"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+    </Grid>
+</mah:MetroWindow>
